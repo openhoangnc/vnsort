@@ -1,5 +1,5 @@
 # vnsort
-Sort vietnamese words
+Sort vietnamese words line by line
 
 ## Installation
 
