@@ -45,5 +45,5 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	log.Printf("Sorted %n lines", len(words))
+	log.Printf("Sorted %d lines", len(words))
 }
