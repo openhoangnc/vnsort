@@ -31,11 +31,16 @@ func main() {
 	if err != nil {
 		log.Fatalln(err)
 	}
-	var words []string
+
+	wordMap := map[string]bool{}
 	for _, w := range strings.Split(string(b), "\n") {
 		if len(w) > 0 {
-			words = append(words, w)
+			wordMap[w] = true
 		}
+	}
+	var words []string
+	for k := range wordMap {
+		words = append(words, k)
 	}
 
 	vnm := collate.New(language.Vietnamese)
